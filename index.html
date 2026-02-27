@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Umar | Python AI & Automation Engineer</title>
+    <meta name="description" content="Muhammad Umar - Python AI & Automation Engineer specializing in workflow automation, AI systems, and n8n integrations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>MU<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="https://www.linkedin.com/in/muhammadmalikumar" target="_blank" class="nav-social" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#testimonials" class="mobile-link">Testimonials</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for Projects</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">
+                        <span class="letter" style="--delay: 0">M</span><span class="letter" style="--delay: 1">u</span><span class="letter" style="--delay: 2">h</span><span class="letter" style="--delay: 3">a</span><span class="letter" style="--delay: 4">m</span><span class="letter" style="--delay: 5">m</span><span class="letter" style="--delay: 6">a</span><span class="letter" style="--delay: 7">d</span>
+                    </span>
+                    <span class="title-line title-accent">
+                        <span class="letter" style="--delay: 8">U</span><span class="letter" style="--delay: 9">m</span><span class="letter" style="--delay: 10">a</span><span class="letter" style="--delay: 11">r</span>
+                    </span>
+                </h1>
+                <div class="hero-typewriter">
+                    <span class="typewriter-label">I am a </span>
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    I build intelligent automation systems that streamline workflows and eliminate repetitive tasks. 
+                    Specializing in Python, AI, and tools like n8n — I help businesses work smarter, not harder.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Contact Me</span>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        <span>View Work</span>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <span class="social-label">Connect With Me</span>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/muhammadmalikumar" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/muhammadmalikumar" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:contact@muhammadumar.dev" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-wrapper">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring ring-2"></div>
+                    <div class="profile-image-container">
+                        <img src="Profile.png" alt="Muhammad Umar" class="profile-image">
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-robot"></i>
+                        <span>AI</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fas fa-cogs"></i>
+                        <span>Automation</span>
+                    </div>
+                    <div class="floating-badge badge-4">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>n8n</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+            <div class="stat-item" data-count="20">
+                <span class="stat-number">0+</span>
+                <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item" data-count="95">
+                <span class="stat-number">0%</span>
+                <span class="stat-label">Client Satisfaction</span>
+            </div>
+            <div class="stat-item" data-count="15">
+                <span class="stat-number">0+</span>
+                <span class="stat-label">Technologies Mastered</span>
+            </div>
+            <div class="stat-item" data-count="2">
+                <span class="stat-number">0+</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">Explore My <span class="gradient-text">Portfolio</span></h2>
+                <p class="section-subtitle">Get to know me, my expertise, and how I can help your business</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up">
+                    <div class="about-card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Strong foundation in Computer Science & Python development with continuous learning in AI and automation technologies.</p>
+                    <div class="about-card-decoration"></div>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-card-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certifications</h3>
+                    <p>Certified in Python, AI/ML, Automation, and workflow orchestration platforms including n8n and related tools.</p>
+                    <div class="about-card-decoration"></div>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Skills</h3>
+                    <p>Expert in Python, AI/ML, n8n, workflow automation, API integrations, and building intelligent automation systems.</p>
+                    <div class="about-card-decoration"></div>
+                </div>
+                <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="about-card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Experience</h3>
+                    <p>Professional experience building automation solutions for businesses, reducing manual work by up to 80%.</p>
+                    <div class="about-card-decoration"></div>
+                </div>
+            </div>
+            <!-- About Me Text -->
+            <div class="about-text-section">
+                <div class="about-text-content">
+                    <h3>Problem Solver & Automation Architect</h3>
+                    <p>I don't waste energy on noise, distractions, or anything that doesn't add value. My focus is on building systems that work — intelligently, efficiently, and reliably.</p>
+                    <p>As a Python AI & Automation Engineer, I specialize in creating intelligent workflows that automate repetitive business processes. From AI-powered bots to complex n8n automations, I transform manual operations into streamlined, autonomous systems.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Workflow Automation with n8n</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>AI & Machine Learning Solutions</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Python Backend Development</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>API Integration & Automation</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Business Process Optimization</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Data Pipeline Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-laptop-code"></i> My Skill Set</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Expertise</span></h2>
+                <p class="section-subtitle">Comprehensive overview of technical expertise developed through years of professional experience</p>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-category">
+                <h3 class="skills-category-title">Soft Skills</h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+                        <div class="soft-skill-info">
+                            <h4>Problem Solving</h4>
+                            <p>I don't panic — I debug, rethink, and resolve</p>
+                            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                        </div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon"><i class="fas fa-users"></i></div>
+                        <div class="soft-skill-info">
+                            <h4>Leadership</h4>
+                            <p>I lead by example — showing initiative and responsibility</p>
+                            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                        </div>
+                        <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon"><i class="fas fa-comments"></i></div>
+                        <div class="soft-skill-info">
+                            <h4>Communication</h4>
+                            <p>Clear code, clearer conversations — great ideas deserve to be heard</p>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon"><i class="fas fa-lightbulb"></i></div>
+                        <div class="soft-skill-info">
+                            <h4>Creative Thinking</h4>
+                            <p>Finding innovative solutions to complex automation challenges</p>
+                            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+                        </div>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="skills-category">
+                <h3 class="skills-category-title">Technical Skills</h3>
+                <div class="tech-skills-grid">
+                    <div class="tech-skill-group">
+                        <h4><i class="fab fa-python"></i> Python & AI</h4>
+                        <div class="tech-skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>Machine Learning</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>OpenAI / LLMs</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>FastAPI</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                    </div>
+                    <div class="tech-skill-group">
+                        <h4><i class="fas fa-cogs"></i> Automation</h4>
+                        <div class="tech-skill-item">
+                            <span>n8n</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>Zapier</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>Selenium</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>Make (Integromat)</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                    <div class="tech-skill-group">
+                        <h4><i class="fas fa-server"></i> Backend & DevOps</h4>
+                        <div class="tech-skill-item">
+                            <span>Django</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>Docker</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>REST APIs</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+                    </div>
+                    <div class="tech-skill-group">
+                        <h4><i class="fas fa-database"></i> Data & Analytics</h4>
+                        <div class="tech-skill-item">
+                            <span>Pandas / NumPy</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>Data Visualization</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>Web Scraping</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+                        <div class="tech-skill-item">
+                            <span>Streamlit</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies Marquee -->
+            <div class="skills-category">
+                <h3 class="skills-category-title">Technologies I Work With</h3>
+                <div class="tech-marquee">
+                    <div class="marquee-track">
+                        <div class="tech-tag"><i class="fab fa-python"></i> Python</div>
+                        <div class="tech-tag"><i class="fas fa-robot"></i> AI / ML</div>
+                        <div class="tech-tag"><i class="fas fa-project-diagram"></i> n8n</div>
+                        <div class="tech-tag"><i class="fas fa-bolt"></i> FastAPI</div>
+                        <div class="tech-tag"><i class="fab fa-docker"></i> Docker</div>
+                        <div class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</div>
+                        <div class="tech-tag"><i class="fas fa-cog"></i> Django</div>
+                        <div class="tech-tag"><i class="fas fa-brain"></i> OpenAI</div>
+                        <div class="tech-tag"><i class="fas fa-spider"></i> Selenium</div>
+                        <div class="tech-tag"><i class="fas fa-chart-bar"></i> Streamlit</div>
+                        <div class="tech-tag"><i class="fas fa-exchange-alt"></i> Zapier</div>
+                        <div class="tech-tag"><i class="fas fa-cloud"></i> AWS</div>
+                        <div class="tech-tag"><i class="fas fa-code"></i> REST APIs</div>
+                        <div class="tech-tag"><i class="fas fa-table"></i> Pandas</div>
+                        <div class="tech-tag"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="tech-tag"><i class="fas fa-flask-vial"></i> Flask</div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="tech-tag"><i class="fab fa-python"></i> Python</div>
+                        <div class="tech-tag"><i class="fas fa-robot"></i> AI / ML</div>
+                        <div class="tech-tag"><i class="fas fa-project-diagram"></i> n8n</div>
+                        <div class="tech-tag"><i class="fas fa-bolt"></i> FastAPI</div>
+                        <div class="tech-tag"><i class="fab fa-docker"></i> Docker</div>
+                        <div class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</div>
+                        <div class="tech-tag"><i class="fas fa-cog"></i> Django</div>
+                        <div class="tech-tag"><i class="fas fa-brain"></i> OpenAI</div>
+                        <div class="tech-tag"><i class="fas fa-spider"></i> Selenium</div>
+                        <div class="tech-tag"><i class="fas fa-chart-bar"></i> Streamlit</div>
+                        <div class="tech-tag"><i class="fas fa-exchange-alt"></i> Zapier</div>
+                        <div class="tech-tag"><i class="fas fa-cloud"></i> AWS</div>
+                        <div class="tech-tag"><i class="fas fa-code"></i> REST APIs</div>
+                        <div class="tech-tag"><i class="fas fa-table"></i> Pandas</div>
+                        <div class="tech-tag"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="tech-tag"><i class="fas fa-flask-vial"></i> Flask</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-folder-open"></i> My Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+                <p class="section-subtitle">A showcase of my latest automation and AI projects across various technologies</p>
+            </div>
+
+            <!-- Project Filter -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="scraping">Scraping</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-project-diagram"></i></div>
+                        <span class="project-badge">Featured</span>
+                    </div>
+                    <h3 class="project-title">Smart Workflow Automator</h3>
+                    <p class="project-description">Built an end-to-end n8n automation system that processes incoming leads, enriches data via APIs, and triggers personalized email sequences — reducing manual work by 80%.</p>
+                    <div class="project-tags">
+                        <span>n8n</span>
+                        <span>Python</span>
+                        <span>API</span>
+                        <span>Email Automation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-brain"></i></div>
+                        <span class="project-badge">AI</span>
+                    </div>
+                    <h3 class="project-title">AI Customer Support Bot</h3>
+                    <p class="project-description">Developed an intelligent AI chatbot using OpenAI GPT APIs and Python that handles customer queries, escalates complex issues, and learns from conversations to improve over time.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>OpenAI</span>
+                        <span>FastAPI</span>
+                        <span>NLP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-file-invoice"></i></div>
+                        <span class="project-badge">Automation</span>
+                    </div>
+                    <h3 class="project-title">Invoice Processing Automator</h3>
+                    <p class="project-description">Created an automated invoice processing pipeline using Python and n8n that extracts data from PDFs, validates entries, updates spreadsheets, and sends notifications automatically.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>n8n</span>
+                        <span>OCR</span>
+                        <span>Google Sheets</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="scraping">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-spider"></i></div>
+                        <span class="project-badge">Scraping</span>
+                    </div>
+                    <h3 class="project-title">Real-Time Market Data Scraper</h3>
+                    <p class="project-description">Engineered a high-performance web scraper using Selenium and BeautifulSoup that collects real-time market data, processes it with Pandas, and generates interactive dashboards.</p>
+                    <div class="project-tags">
+                        <span>Selenium</span>
+                        <span>BeautifulSoup</span>
+                        <span>Pandas</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-server"></i></div>
+                        <span class="project-badge">Backend</span>
+                    </div>
+                    <h3 class="project-title">Automated Reporting Dashboard</h3>
+                    <p class="project-description">Built a Django-based reporting system with automated data collection, real-time analytics dashboards, and scheduled PDF report generation sent via email to stakeholders.</p>
+                    <div class="project-tags">
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                        <span>Celery</span>
+                        <span>Charts.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Details</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        <span class="project-badge">AI</span>
+                    </div>
+                    <h3 class="project-title">Predictive Sales Analytics</h3>
+                    <p class="project-description">Developed a machine learning model that predicts sales trends using historical data, integrated with a Streamlit dashboard for real-time visualization and business decision support.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Scikit-Learn</span>
+                        <span>Streamlit</span>
+                        <span>ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Professional Experience</span>
+                <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+                <p class="section-subtitle">A journey through my professional career highlighting key roles and achievements</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2024 - Present</span>
+                            <span class="timeline-company">Freelance</span>
+                        </div>
+                        <h3>Python AI & Automation Engineer</h3>
+                        <p>Building intelligent automation systems for clients worldwide. Specializing in n8n workflows, AI-powered bots, data pipelines, and business process automation. Delivering high-quality solutions with quick turnaround.</p>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>n8n</span>
+                            <span>Automation</span>
+                            <span>FastAPI</span>
+                            <span>Web Scraping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2023 - 2024</span>
+                            <span class="timeline-company">Upwork / Fiverr</span>
+                        </div>
+                        <h3>Python Developer & Automation Specialist</h3>
+                        <p>Delivered automation projects on freelancing platforms, earning top ratings for quality work. Created custom scripts, API integrations, and workflow automations for diverse clients across industries.</p>
+                        <div class="timeline-tags">
+                            <span>Django</span>
+                            <span>Selenium</span>
+                            <span>Data Analysis</span>
+                            <span>API Development</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2022 - 2023</span>
+                            <span class="timeline-company">Self-Learning</span>
+                        </div>
+                        <h3>Python & AI Foundations</h3>
+                        <p>Intensive self-learning journey mastering Python, data science, machine learning fundamentals, and automation tools. Built personal projects to solidify skills and develop a strong technical foundation.</p>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Data Science</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-quote-left"></i> Client Testimonials</span>
+                <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+                <p class="section-subtitle">Hear what my clients have to say about their experiences working with me</p>
+            </div>
+
+            <div class="testimonials-slider" id="testimonialSlider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                        <p class="testimonial-text">"Muhammad Umar delivered exceptional automation work. He built a complete n8n workflow that saved our team 20+ hours per week. His understanding of business processes and ability to translate them into automation is remarkable. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <h4>Ahmed Khan</h4>
+                                <span>CEO, TechFlow Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                        <p class="testimonial-text">"Umar is an incredibly talented Python developer. He built an AI chatbot for our customer service that handles 70% of queries automatically. His communication is excellent and he always delivers on time. Will definitely work with him again!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <h4>Sarah Mitchell</h4>
+                                <span>Product Manager, DataSync Inc</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                        <p class="testimonial-text">"Working with Muhammad Umar was a fantastic experience. He automated our entire data pipeline from scraping to dashboard visualization. The system runs flawlessly 24/7 with zero manual intervention. His expertise in Python and automation is top-notch."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div class="author-info">
+                                <h4>Rizwan Ali</h4>
+                                <span>Data Lead, AnalyticsPro</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                        <p class="testimonial-text">"Umar built a complete invoice automation system for our company using n8n and Python. What used to take 3 people a full day now runs automatically in minutes. He's professional, fast, and truly understands automation at a deep level."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Maria Santos</h4>
+                                <span>Operations Director, CloudBridge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn prev" id="prevTestimonial"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots" id="testimonialDots"></div>
+                    <button class="testimonial-btn next" id="nextTestimonial"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Have a project in mind? Let's work together to bring your ideas to life</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                            <span class="form-icon"><i class="fas fa-user"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            <span class="form-icon"><i class="fas fa-envelope"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Discussion">
+                            <span class="form-icon"><i class="fas fa-tag"></i></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            <span class="form-icon textarea-icon"><i class="fas fa-comment-dots"></i></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info-container">
+                    <div class="contact-info-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>umar.automation.dev@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="info-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="info-content">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/muhammadmalikumar" target="_blank">linkedin.com/in/muhammadmalikumar</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-social-section">
+                        <h4>Connect With Me</h4>
+                        <div class="contact-socials">
+                            <a href="https://www.linkedin.com/in/muhammadmalikumar" target="_blank" class="contact-social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/muhammadmalikumar" target="_blank" class="contact-social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:umar.automation.dev@gmail.com" class="contact-social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>MU<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+                    </a>
+                    <p>Crafting intelligent automation with code and creativity.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/muhammadmalikumar" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/muhammadmalikumar" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:umar.automation.dev@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Muhammad Umar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <span class="loader-bracket">&lt;</span>
+            <span class="loader-text">MU</span>
+            <span class="loader-slash">/</span>
+            <span class="loader-bracket">&gt;</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
