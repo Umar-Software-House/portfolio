@@ -436,10 +436,9 @@ input, textarea {
 }
 
 .title-accent {
-    background: var(--gradient-text);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* Solid fallback for all browsers */
+    color: #a78bfa;
+    font-weight: 900;
 }
 
 .letter {
