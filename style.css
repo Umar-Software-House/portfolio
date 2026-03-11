@@ -447,6 +447,7 @@ input, textarea {
     animation-delay: calc(var(--delay) * 0.05s);
     opacity: 0;
     transform: translateY(30px);
+    vertical-align: baseline;
 }
 
 @keyframes letterReveal {
